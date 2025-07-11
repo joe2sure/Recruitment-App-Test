@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@import "tw-animate-css";
+
+@layer utilities {
+    .security-text-two {
+        @apply font-medium text-[15px] leading-[20px] text-[#3A3A3A] ;
+    }
+  .security-text-two {
+    font-size: 15px;
+    line-height: 20px;
+    color: #3a3a3a;
+    font-weight: 500;
+  }
+}

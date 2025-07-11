@@ -1,0 +1,84 @@
+/* index.css or app.css */
+
+/* Ensure html and body take full height */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  height: 100%;
+}
+
+/* Custom scrolling behavior */
+.scroll-container {
+  height: 100%;
+  overflow-y: auto;
+
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Smooth scrolling */
+* {
+  scroll-behavior: smooth;
+}
+
+/* Optional: Style the dashboard’s scrollbar */
+main::-webkit-scrollbar {
+  width: 8px;
+}
+main::-webkit-scrollbar-thumb {
+  background: purple;
+  border-radius: 4px;
+}
+main::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Prevent Tiptap editor from creating its own scrollbar */
+.ProseMirror {
+  min-height: 100px;
+  max-height: none;
+  overflow-y: visible;
+}
+
+/* Ensure child components don’t introduce scrollbars */
+.basic-information-container,
+.employer-details-container,
+.about-employer-container {
+  max-height: none;
+  overflow-y: visible;
+}
+
+.custom-scrollview {
+  height: 100vh;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+}
+
+/* Optional: Custom scrollbar styling */
+.custom-scrollview::-webkit-scrollbar {
+  width: 8px;
+}
+
+.custom-scrollview::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.custom-scrollview::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+.custom-scrollview::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* For Firefox */
+.custom-scrollview {
+  scrollbar-width: thin;
+  scrollbar-color: #c1c1c1 #f1f1f1;
+}

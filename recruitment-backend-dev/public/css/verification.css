@@ -1,0 +1,144 @@
+:root {
+    --primary-color: #0057ff;
+    --success-color: #00a660;
+    --error-color: #e34c4c;
+    --primary-text: #14171a;
+    --secondary-text: #657786;
+    --background: #f5f8fa;
+    --card-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: var(--background);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 480px;
+    width: 100%;
+    padding: 2.5rem;
+    text-align: center;
+    background: white;
+    border-radius: 16px;
+    box-shadow: var(--card-shadow);
+}
+
+.brand-name {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    letter-spacing: -0.5px;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+.brand-accent {
+    color: var(--success-color);
+    font-style: italic;
+}
+
+.icon-container {
+    width: 88px;
+    height: 88px;
+    margin: 0 auto 1.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+}
+
+.success .icon-container {
+    background: rgba(0, 166, 96, 0.1);
+    color: var(--success-color);
+}
+
+.error .icon-container {
+    background: rgba(227, 76, 76, 0.1);
+    color: var(--error-color);
+}
+
+h1 {
+    color: var(--primary-text);
+    margin-bottom: 1rem;
+    font-size: 1.75rem;
+    font-weight: 600;
+}
+
+p {
+    color: var(--secondary-text);
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    padding: 0 1rem;
+}
+
+.button {
+    display: inline-block;
+    padding: 0.875rem 2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    min-width: 200px;
+}
+
+.success .button {
+    background-color: var(--success-color);
+}
+
+.error .button {
+    background-color: var(--error-color);
+}
+
+.button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.support-text {
+    margin-top: 2rem;
+    font-size: 0.875rem;
+    color: var(--secondary-text);
+}
+
+.support-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.support-link:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 2rem 1.5rem;
+        margin: 1rem;
+        border-radius: 12px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .icon-container {
+        width: 72px;
+        height: 72px;
+        font-size: 2rem;
+    }
+}

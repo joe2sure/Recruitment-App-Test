@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+* {
+  font-family: 'Inter', sans-serif !important;
+}
+
+:root {
+  --color-primary: #46007a;
+  --color-primary-500: #5b20b7;
+  --color-secondary: #8c32e0;
+  --color-secondary-500: #8c32e0;
+  --color-secondary-400: #a46ae4;
+  --color-secondary-300: #d4b8e4;
+  --color-error: #f52323;
+  --color-error-500: #f52323;
+  --color-success: #2eb857;
+  --color-success-500: #2eb857;
+  --color-text: #000000;
+  --color-text-primary: #000000;
+  --color-text-secondary: #f5f5f5;
+  --font-family-sans: 'Inter', sans-serif;
+
+  /* Typography scale */
+  --font-size-h1: 2rem;
+  --line-height-h1: 2.5rem;
+  --font-weight-h1: 700;
+
+  --font-size-h2: 1.5rem;
+  --line-height-h2: 2rem;
+  --font-weight-h2: 700;
+
+  --font-size-h3: 1.25rem;
+  --line-height-h3: 1.75rem;
+  --font-weight-h3: 700;
+
+  --font-size-emphasis: 1rem;
+  --line-height-emphasis: 1.5rem;
+  --font-weight-emphasis: 700;
+
+  --font-size-button: 0.875rem;
+  --line-height-button: 1.25rem;
+  --font-weight-button: 500;
+
+  --font-size-body: 1rem;
+  --line-height-body: 1.5rem;
+  --font-weight-body: 400;
+
+  --font-size-faint: 0.875rem;
+  --line-height-faint: 1.25rem;
+  --font-weight-faint: 400;
+}

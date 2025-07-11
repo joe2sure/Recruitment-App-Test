@@ -1,0 +1,62 @@
+/* Typography styles */
+
+/* H1 */
+.text-h1 {
+  font-size: 2rem; /* 32px */
+  line-height: 2.5rem; /* 40px */
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+/* H2 */
+.text-h2 {
+  font-size: 1.5rem; /* 24px */
+  line-height: 2rem; /* 32px */
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+/* H3 */
+.text-h3 {
+  font-size: 1.25rem; /* 20px */
+  line-height: 1.75rem; /* 28px */
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+/* Emphasis */
+.text-emphasis {
+  font-size: 1rem; /* 16px */
+  line-height: 1.5rem; /* 24px */
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+/* Button */
+.text-button {
+  font-size: 0.875rem; /* 14px */
+  line-height: 1.25rem; /* 20px */
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+/* Body */
+.text-body {
+  font-size: 1rem; /* 16px */
+  line-height: 1.5rem; /* 24px */
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+/* Faint */
+.text-faint {
+  font-size: 0.875rem; /* 14px */
+  line-height: 1.25rem; /* 20px */
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+/* Font family */
+.font-sans {
+  font-family: 'Inter', system-ui, sans-serif;
+}
